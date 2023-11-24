@@ -32,7 +32,7 @@ app.listen(PORT, () => {
 // app.use('/api', new AppRoutes().router);
 
 app.get('/api/health', (req: Request, res: Response) => {
-  res.json(`service health is good, and running on port ${PORT}`);
+  res.json(`server health is good, and running on port ${PORT}`);
 });
 
 app.use((error: any, req: Request, res: Response, next: any) => {
