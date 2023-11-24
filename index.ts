@@ -8,9 +8,7 @@ AppDataSource.initialize();
 const app = express();
 app.use(helmet());
 
-const allowedOrigins = [
-  'http://localhost:3000',
-];
+const allowedOrigins = ['http://localhost:3000'];
 
 const options: cors.CorsOptions = {
   credentials: true,
@@ -27,7 +25,7 @@ app.listen(PORT, () => {
   console.log(
     '\x1b[32m',
     `***************************** Server is up on port ${PORT} *****************************`,
-    '\x1b[32m'
+    '\x1b[32m',
   );
 });
 

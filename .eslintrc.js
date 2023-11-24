@@ -19,7 +19,7 @@ module.exports = {
       { singleQuote: true },
       { doubleQuote: true },
     ],
-    // '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-explicit-any': 0,
     // '@typescript-eslint/no-explicit-any': 0,
     // 'function-paren-newline': ['error', 'never'],
     // 'max-len': 'off',
