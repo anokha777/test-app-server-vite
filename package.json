@@ -7,9 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "env-cmd -f .env nodemon index.ts",
     "lint": "eslint . --ext .js,.ts",
-    "lint:fix": "npm run lint -- --fix",
-    "prepare": "husky install"
-  },
+    "lint:fix": "npm run lint -- --fix"
+    },
   "repository": {
     "type": "git",
     "url": "git.com"

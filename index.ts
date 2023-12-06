@@ -6,7 +6,7 @@ import { AppDataSource } from './data-source';
 AppDataSource.initialize();
 
 const app = express();
-app.use(helmet());
+
 
 const allowedOrigins = ['http://localhost:3000'];
 
@@ -16,6 +16,10 @@ const options: cors.CorsOptions = {
 };
 
 app.use(cors(options));
+
+
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -31,7 +35,7 @@ app.listen(PORT, () => {
 
 // app.use('/api', new AppRoutes().router);
 
-app.get('/api/health', (req: Request, res: Response) => {
+app.get('/health', (req: Request, res: Response) => {
   res.json(`server health is good, and running on port ${PORT}`);
 });
 
